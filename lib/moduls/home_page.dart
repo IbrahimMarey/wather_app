@@ -15,8 +15,11 @@ class HomePage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('Wather app'),
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        title: Text('Wather app',style: TextStyle(color: Colors.black),),
         actions: [
           IconButton(
             onPressed: () {
@@ -36,10 +39,10 @@ class HomePage extends StatelessWidget{
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    weatherModel!.getThemeColor(),
-                    weatherModel!.getThemeColor()[500]!,
+                    Colors.white,
                     weatherModel!.getThemeColor()[300]!,
-                    Colors.white
+                    weatherModel!.getThemeColor()[500]!,
+                    weatherModel!.getThemeColor(),
                   ],
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
