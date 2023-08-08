@@ -17,9 +17,12 @@ class SearchPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        title: Text('search a city'),
+        title: const Text('search a city',style: TextStyle(color: Colors.black),),
         backgroundColor: Colors.white,
         centerTitle: true,
+        leading: IconButton(onPressed: (){
+          Navigator.pop(context);
+        },icon: const Icon(Icons.arrow_back_ios,color: Colors.black,)),
         elevation: 0.0,
       ),
       body: Padding(

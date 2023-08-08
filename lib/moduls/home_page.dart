@@ -19,13 +19,13 @@ class HomePage extends StatelessWidget{
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.0,
-        title: Text('Wather app',style: TextStyle(color: Colors.black),),
+        title: const Text('Wather app',style: TextStyle(color: Colors.black),),
         actions: [
           IconButton(
             onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => SearchPage(updateUi:(){},),));
             },
-            icon: Icon(Icons.search),
+            icon: const Icon(Icons.search,color: Colors.black,),
           ),
         ],
       ),
